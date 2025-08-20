@@ -55,11 +55,12 @@ const Hero = () => {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-primary">
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3"
-              alt={portfolioData.name}
-              fill
-              style={{ objectFit: 'cover' }}
-              priority
+                src="/images/Amit.jpg"
+                alt={portfolioData.name}
+                width={300}
+                height={300}
+                style={{ objectFit: 'cover' }}
+                priority
             />
           </div>
         </motion.div>

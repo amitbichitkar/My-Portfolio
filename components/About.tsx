@@ -33,10 +33,11 @@ const About = () => {
                 transition={{ duration: 0.5 }}
               >
                 <Image
-                  src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3"
+                  src="/images/Amit.jpg"  
                   alt="About me"
-                  fill
-                  style={{ objectFit: 'cover' }}
+                  width={300}
+                  height={100}
+                  style={{ objectFit: 'contain',borderRadius: '40%' }}
                 />
               </motion.div>
             </div>

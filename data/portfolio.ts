@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons';
-import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { SiTypescript, SiJavascript, SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import { FaReact, FaNodeJs, FaGitAlt, FaFigma, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { SiTypescript, SiJavascript, SiTailwindcss, SiNextdotjs, SiPython, SiLinux, SiAwsamplify, SiDocker, SiKubernetes, SiJenkins, SiAnsible } from 'react-icons/si';
 
 export interface Skill {
   name: string;
@@ -66,134 +66,83 @@ export interface PortfolioData {
   socialLinks: SocialLink[];
 }
 
-// Replace with your personal information
 const portfolioData: PortfolioData = {
-  name: "John Doe",
-  role: "Full Stack Developer",
-  bio: "Passionate developer with expertise in building modern web applications",
-  tagline: "Crafting digital experiences that make a difference",
-  about: "I'm a full stack developer with 5+ years of experience building web applications. I specialize in React, Node.js, and modern JavaScript frameworks. I'm passionate about creating clean, efficient, and user-friendly applications that solve real-world problems.",
-  location: "New York, NY",
-  email: "john.doe@example.com",
-  phone: "+1 (555) 123-4567",
-  avatar: "/images/avatar.jpg",
-  
+  name: "Amit Naganath Bichitkar",
+  role: "Computer Engineering Student | Aspiring DevOps Engineer",
+  bio: "Enthusiastic and quick-learning Computer Engineer passionate about building scalable apps and cloud-native solutions.",
+  tagline: "Turning ideas into scalable, serverless, and reliable solutions",
+  about: "I am currently pursuing my Bachelor's in Computer Engineering from Trinity College of Engineering and Research, Pune. I have hands-on experience in Android app development, image segmentation, and cloud projects using AWS. I’m also exploring DevOps tools like Docker, Kubernetes, Jenkins, and Ansible.",
+  location: "Pune, Maharashtra, India",
+  email: "amitbichitkar20@gmail.com",
+  phone: "+91 7264094055",
+  avatar: "/images/Amit.jpg",
+
   skills: [
-    { name: "React", icon: FaReact, level: 90 },
-    { name: "TypeScript", icon: SiTypescript, level: 85 },
-    { name: "JavaScript", icon: SiJavascript, level: 95 },
-    { name: "Node.js", icon: FaNodeJs, level: 80 },
-    { name: "Next.js", icon: SiNextdotjs, level: 85 },
-    { name: "TailwindCSS", icon: SiTailwindcss, level: 90 },
-    { name: "Git", icon: FaGitAlt, level: 85 },
-    { name: "Figma", icon: FaFigma, level: 75 },
+    { name: "Java", icon: SiJavascript, level: 85 },
+    { name: "Python", icon: SiPython, level: 70 },
+    { name: "Linux", icon: SiLinux, level: 80 },
+    { name: "AWS Cloud", icon: SiAwsamplify, level: 75 },
+    { name: "Docker", icon: SiDocker, level: 60 },
+    { name: "Kubernetes", icon: SiKubernetes, level: 50 },
+    { name: "Jenkins CI/CD", icon: SiJenkins, level: 55 },
+    { name: "Ansible", icon: SiAnsible, level: 50 },
+    { name: "Git", icon: FaGitAlt, level: 80 }
   ],
-  
+
   projects: [
     {
       id: "project-1",
-      title: "E-commerce Platform",
-      description: "A full-featured e-commerce platform built with Next.js, Node.js, and MongoDB. Features include user authentication, product management, cart functionality, and payment processing.",
-      image: "/images/projects/ecommerce.jpg",
-      tags: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-      githubUrl: "https://github.com/johndoe/ecommerce",
-      liveUrl: "https://ecommerce-demo.example.com"
+      title: "Image Segmentation Android App",
+      description: "Developed a lightweight, real-time image segmentation app for Android using Java, CNN, and Firebase ML Kit. Enabled on-device processing, integrated Firebase Realtime Database, and object recognition for scalable and reliable performance.",
+      image: "/images/projects/segmentation.jpg",
+      tags: ["Java", "Android", "CNN", "Firebase"],
+      githubUrl: "https://github.com/amitbichitkar",
     },
     {
       id: "project-2",
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, team workspaces, and progress tracking.",
-      image: "/images/projects/taskmanager.jpg",
-      tags: ["React", "Firebase", "TailwindCSS"],
-      githubUrl: "https://github.com/johndoe/taskmanager",
-      liveUrl: "https://taskmanager-demo.example.com"
-    },
-    {
-      id: "project-3",
-      title: "Weather Dashboard",
-      description: "A weather dashboard that displays current and forecasted weather data for multiple locations using the OpenWeather API.",
-      image: "/images/projects/weather.jpg",
-      tags: ["JavaScript", "API", "CSS"],
-      githubUrl: "https://github.com/johndoe/weather",
-      liveUrl: "https://weather-demo.example.com"
+      title: "S3Track – Serverless File Upload Tracker",
+      description: "Built a serverless application using AWS (S3, Lambda, DynamoDB, SNS) to track file uploads in real time. Implemented event-driven architecture with notifications and metadata storage, ensuring scalability and reliability.",
+      image: "/images/projects/s3track.jpg",
+      tags: ["AWS", "S3", "Lambda", "DynamoDB", "SNS"],
+      githubUrl: "https://github.com/amitbichitkar",
     }
   ],
-  
-  certifications: [
-    {
-      id: "cert-1",
-      title: "AWS Certified Developer - Associate",
-      issuer: "Amazon Web Services",
-      date: "2023",
-      url: "https://www.example.com/cert/aws"
-    },
-    {
-      id: "cert-2",
-      title: "Meta Front-End Developer Professional Certificate",
-      issuer: "Meta (Facebook)",
-      date: "2022",
-      url: "https://www.example.com/cert/meta"
-    },
-    {
-      id: "cert-3",
-      title: "Google UX Design Professional Certificate",
-      issuer: "Google",
-      date: "2021",
-      url: "https://www.example.com/cert/google"
-    }
-  ],
-  
+
+  certifications: [],
+
   education: [
     {
-      degree: "Bachelor of Science in Computer Science",
-      institution: "University of Technology",
-      location: "New York, NY",
-      period: "2015 - 2019",
-      description: "Graduated with honors. Specialized in software engineering and web development."
+      degree: "Bachelor's in Computer Engineering",
+      institution: "Trinity College Of Engineering And Research",
+      location: "Pune, Maharashtra",
+      period: "2021 - 2025",
+      description: "Active member of the cricket team and participated in fests and seminars. Secured 70% in academics."
+    },
+    {
+      degree: "Diploma in Computer Engineering",
+      institution: "Jaywantrao-Sawant Shishak Prasarak Mandal",
+      location: "Pune, Maharashtra",
+      period: "2018 - 2021",
+      description: "Secured 85% in academics."
     }
   ],
-  
+
   experience: [
     {
-      position: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      location: "New York, NY",
-      period: "2021 - Present",
+      position: "Java Developer Intern",
+      company: "OASIS INFOBYTE",
+      location: "Pune, Maharashtra",
+      period: "2024",
       description: [
-        "Lead a team of 5 developers in building and maintaining multiple web applications",
-        "Implemented CI/CD pipelines that reduced deployment time by 40%",
-        "Migrated legacy applications to modern React and TypeScript architecture"
-      ]
-    },
-    {
-      position: "Full Stack Developer",
-      company: "Digital Solutions LLC",
-      location: "Boston, MA",
-      period: "2019 - 2021",
-      description: [
-        "Developed and maintained multiple client websites and web applications",
-        "Implemented responsive designs and ensured cross-browser compatibility",
-        "Collaborated with designers and back-end developers to integrate user-facing elements"
+        "Delivered high-quality code and completed tasks within deadlines.",
+        "Enhanced understanding of object-oriented programming.",
       ]
     }
   ],
-  
+
   socialLinks: [
-    {
-      platform: "GitHub",
-      url: "https://github.com/johndoe",
-      icon: FaGithub
-    },
-    {
-      platform: "LinkedIn",
-      url: "https://linkedin.com/in/johndoe",
-      icon: FaLinkedin
-    },
-    {
-      platform: "Twitter",
-      url: "https://twitter.com/johndoe",
-      icon: FaTwitter
-    }
+    { platform: "GitHub", url: "https://github.com/amitbichitkar", icon: FaGithub },
+    { platform: "LinkedIn", url: "https://www.linkedin.com/in/amit-bichitkar-170916283/", icon: FaLinkedin },
   ]
 };
 
