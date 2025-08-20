@@ -17,7 +17,7 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   
   // Get unique tags from all projects
-  const allTags = ['All', ...new Set(portfolioData.projects.flatMap(project => project.tags))];
+  const allTags = ['All', ...Array.from(new Set(portfolioData.projects.flatMap(project => project.tags)))];;
   
   // Filter projects based on active filter
   const filteredProjects = activeFilter === 'All'
